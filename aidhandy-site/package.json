@@ -1,0 +1,13 @@
+{
+  "name": "aidhandy-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static marketing site for AidHandy companion intake.",
+  "scripts": {
+    "build": "echo \"Static site - nothing to build\"",
+    "preview": "npx serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
