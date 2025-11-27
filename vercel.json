@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/dashboard",
+      "destination": "https://aidhandyapp.vercel.app/dashboard"
+    },
+    {
       "source": "/dashboard/:path*",
       "destination": "https://aidhandyapp.vercel.app/dashboard/:path*"
     }
