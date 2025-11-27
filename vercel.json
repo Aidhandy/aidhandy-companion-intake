@@ -5,6 +5,18 @@
       "destination": "https://aidhandyapp.vercel.app/_next/:path*"
     },
     {
+      "source": "/images/:path*",
+      "destination": "https://aidhandyapp.vercel.app/images/:path*"
+    },
+    {
+      "source": "/static/:path*",
+      "destination": "https://aidhandyapp.vercel.app/static/:path*"
+    },
+    {
+      "source": "/public/:path*",
+      "destination": "https://aidhandyapp.vercel.app/public/:path*"
+    },
+    {
       "source": "/dashboard",
       "destination": "https://aidhandyapp.vercel.app/dashboard"
     },
