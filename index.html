@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AidHandy – Travel Support</title>
-
   <style>
     :root {
       --primary: #1f7a8c;
@@ -12,46 +11,38 @@
       --text: #1f2937;
       --muted: #6b7280;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: system-ui, -apple-system, sans-serif;
     }
-
     body {
       background: var(--bg);
       color: var(--text);
     }
-
     .container {
       max-width: 1100px;
       margin: 0 auto;
       padding: 40px 20px;
     }
-
     header {
       text-align: center;
       padding: 40px 0;
     }
-
     header h1 {
       font-size: 32px;
       margin-bottom: 10px;
     }
-
     header p {
       color: var(--muted);
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
-
     .card {
       background: white;
       border-radius: 20px;
@@ -59,16 +50,21 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
       text-align: left;
     }
-
-    .card-img {
+    .card-img-wrapper {
       width: 100%;
       height: 240px;
-      object-fit: contain; /* FIXED */
       border-radius: 16px;
+      overflow: hidden;
       background: #f3f4f6;
       margin-bottom: 20px;
     }
-
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
     .icon {
       width: 50px;
       height: 50px;
@@ -79,22 +75,18 @@
       justify-content: center;
       margin-bottom: 15px;
     }
-
     .icon svg {
       width: 24px;
       height: 24px;
       stroke: white;
     }
-
     h2 {
       margin-bottom: 10px;
     }
-
     p {
       color: var(--muted);
       line-height: 1.5;
     }
-
     footer {
       text-align: center;
       margin-top: 60px;
@@ -103,40 +95,35 @@
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <header>
       <h1>Together, every flight feels easier.</h1>
       <p>Connecting travelers with trusted companions for airport and in-flight support.</p>
     </header>
-
     <div class="grid">
-
       <!-- Travelers -->
       <div class="card">
-        <img src="/images/companion-helping-family.png" class="card-img" alt="Traveler receiving assistance">
-
+        <div class="card-img-wrapper">
+          <img src="/images/companion-helping-family.png" class="card-img" alt="Traveler receiving assistance">
+        </div>
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
             <circle cx="9" cy="7" r="4"></circle>
           </svg>
         </div>
-
         <h2>For Travelers</h2>
         <p>
           Travelers can request support for airport check-in, gate navigation,
           boarding assistance, and overall travel reassurance.
         </p>
       </div>
-
       <!-- Companions -->
       <div class="card">
-        <img src="/images/companion-helping-elderly.png" class="card-img" alt="Companion helping elderly">
-
+        <div class="card-img-wrapper">
+          <img src="/images/companion-helping-elderly.png" class="card-img" alt="Companion helping elderly">
+        </div>
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
@@ -145,21 +132,16 @@
             <line x1="15" y1="9" x2="15.01" y2="9"></line>
           </svg>
         </div>
-
         <h2>For Companions</h2>
         <p>
           Companions can join the network and help travelers feel more confident
           throughout their journey while gaining flexible opportunities.
         </p>
       </div>
-
     </div>
-
     <footer>
       © 2026 AidHandy Inc.
     </footer>
-
   </div>
-
 </body>
 </html>
