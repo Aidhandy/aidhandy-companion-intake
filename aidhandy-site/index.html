@@ -508,6 +508,23 @@
 
     .card p { color: var(--ah-text-light); font-size: 17px; line-height: 1.75; margin: 0; }
 
+    .card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 24px;
+      display: block;
+      transition: transform 0.4s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card:hover .card-img {
+      transform: scale(1.03);
+    }
+
+
     .list { list-style: none; padding: 0; margin: 20px 0; }
 
     .list li {
@@ -880,6 +897,7 @@
 
       <div class="grid">
         <div class="card shadow">
+          <img src="images/companion-helping-family.png" class="card-img" alt="Traveler receiving airport assistance">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -893,6 +911,7 @@
         </div>
 
         <div class="card shadow">
+          <img src="images/companion-helping-elderly.png" class="card-img" alt="Companion helping an elderly traveler">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -953,7 +972,7 @@
     <div class="wrap">
       <div class="cta-content">
         <h2>Help shape the future of travel support</h2>
-        <p>Join the early AidHandy companion network as we prepare the platform for public launch. Clear. Practical. Trust-first. Imagine that, a startup not pretending it already conquered the planet.</p>
+        <p>Join the early AidHandy companion network as we prepare the platform for public launch. Clear, practical, and trust-first from day one.</p>
         <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSerohAoLwb57SUB79ycG0EbS4UUCNJir9_AtAXQHS7CXsSkog/viewform" target="_blank" rel="noopener noreferrer"><span>Apply Now</span></a>
       </div>
     </div>
